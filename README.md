@@ -15,5 +15,5 @@ Puedes ver el resultado final, siguendo el siguente enlace.
 
 
 ----------
-Todoas las images del juego como lo serian los personajes son gracias a [Honey Impact](https://genshin.honeyhunterworld.com/)
+Todas las images del juego como lo serian los personajes son gracias a [Honey Impact](https://genshin.honeyhunterworld.com/)
 
