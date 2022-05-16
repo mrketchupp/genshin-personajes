@@ -1,6 +1,6 @@
 # Bienvenido a este proyecto!
 
-Intentare recrear el  menu de personaje de Genshin Impact usando **html** y **css**
+Intento de recrear el  menu de personaje de Genshin Impact usando **html** y **css**
 
 
 # Menu del juego
