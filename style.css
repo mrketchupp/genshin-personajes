@@ -70,16 +70,19 @@
 
 .personaje__menu {
     border: 2px green dotted;
+    background-color: green;
     width: 29%;
     height: 100vh;
     display: inline-block;
-}
+   }
 
 /* Estilos del menu lateral derecho */
 
 .personaje__detalles {
     border: 2px blue dotted;
+    background-color: blue;
     width: 70%;
     height: 100vh;
     display: inline-block;
+    position: absolute;
 }
