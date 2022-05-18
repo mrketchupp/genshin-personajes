@@ -71,18 +71,68 @@
 .personaje__menu {
     border: 2px green dotted;
     background-color: green;
-    width: 29%;
+    width: 30%;
     height: 100vh;
     display: inline-block;
    }
+
+.personaje__lista {
+    position: absolute;
+    left: 70px;
+    top: 20px;
+}
+
+.personaje__opciones {
+    font-size: 2.8rem;
+    color: #fafafa;
+    margin: 10px 0;
+}
 
 /* Estilos del menu lateral derecho */
 
 .personaje__detalles {
     border: 2px blue dotted;
-    background-color: blue;
+    /* background-color: blue; */
     width: 70%;
     height: 100vh;
-    display: inline-block;
+    display: inline-flex;
     position: absolute;
+}
+
+.personaje__modelo {
+    width: 60%;
+    height: 100vh;
+    border: 2px coral dotted;
+    background-color: coral;
+}
+
+.personaje__modelo-img {
+    width: 100%;
+}
+
+.atributos {
+    width: 40%;
+    height: 100vh;
+    border: 2px purple dotted;
+    background-color: purple;
+}
+
+.atributos__titulo {
+    font-size: 2rem;
+}
+
+.atributos__lista {
+    list-style: none;
+}
+
+.atributos__info {
+    font-size: 1.6rem
+}
+
+.atributos__valor {
+    font-size: 1.6rem;
+}
+
+.atributos__detalles {
+    font-size: 1.8rem;
 }
