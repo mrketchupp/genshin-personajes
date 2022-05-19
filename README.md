@@ -14,5 +14,5 @@ Intento de recrear el  menu de personaje de Genshin Impact usando **html** y **c
 
 
 ----------
-Todas las images los personajes son gracias a [Honey Impact](https://genshin.honeyhunterworld.com/)
+Todas las images de los personajes son gracias a [Honey Impact](https://genshin.honeyhunterworld.com/)
 
