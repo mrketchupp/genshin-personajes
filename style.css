@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"); */
+@font-face {
+    font-family: genshin-impact;
+    src: url(./font/ja-jp.ttf);
+}
 
 * {
     /* box-sizing: border-box;
     margin: 0; */
     padding: 0;
     font-size: 62.5%;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'genshin-impact', sans-serif;
+    background-color: #5D217A;
 } 
 
 /* Comienza los estilos del menu */
@@ -27,11 +32,14 @@
 .menu__titulo {
     font-size: 1.6rem;
     display: inline;
+    color: #ffffff;
+    z-index: 1;
 } 
 
 .menu__vision-img {
     width: 60px;
     height: 60px;
+    
 }
 
 .menu__lista {
@@ -47,11 +55,30 @@
 .menu__personajes {
     display: inline-block;
     margin: 0 10px;
+    /* width: 45px;
+    height: 45px; */
+    
 }
 
 .menu__personajes-ico {
     width: 40px;
     height: 40px;
+    border: 2px #e4dddd10 solid;
+    border-radius: 100%;
+}
+
+.team {
+    border: 2px #88B34F solid;
+    border-radius: 100%;
+    background-color: #507432;
+}
+
+.select {
+    width: 41px;
+    height: 41px;
+    background-color: #88B34F;
+    border: 2px #EDE5D8 solid;
+    border-radius: 100%;
 }
 
 /* comienza los estilos del personaje */
@@ -63,7 +90,6 @@
     margin: 0 10% 0 10%;
     position: fixed;
     display: inline-block;
-    
 }
 
 /* Estilos del menu lateral izquierdo*/
@@ -83,7 +109,7 @@
 
 .personaje__opciones {
     font-size: 2.8rem;
-    color: #131313;
+    color: #ffffff;
     margin: 10px 0;
 }
 
@@ -107,7 +133,7 @@
 
 .personaje__modelo-img {
     width: 40%;
-    margin: 50px 30% 0 30%;
+    margin: 50px 10% 0 10%;
 }
 
 .atributos {
@@ -116,10 +142,17 @@
     /* border: 2px purple dotted; */
     /* background-color: purple; */
     padding-top: 10px;
+    color: #fff;
+}
+
+.titulo__sub-contenido {
+    color: #fbfbfb70;
+    font-size: 2rem;
 }
 
 .atributos__titulo {
     font-size: 2rem;
+    margin: 5px 0;
 }
 
 .atributos__stats {
@@ -129,6 +162,12 @@
 .atributos__lista {
     list-style: none;
     margin-right: 10px;
+}
+
+.atributos__iconos {
+    width: 16px;
+    display: block;
+    margin: 2px 0 8px 0;
 }
 
 .atributos__info {
@@ -143,10 +182,16 @@
     display: block;
     font-size: 1.8rem;
     margin: 10px 0 30px 0;
+    color: #fff;
+    width: 85%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 8px 0 3px 0;
+    border-radius: 30px;
 
 }
 
 .atributos__resumen {
-    font-size: 1.2rem;
-    color: rgb(32, 31, 29);
+    font-size: 1.4rem;
+    color: #fbfbfb8c;
 }
