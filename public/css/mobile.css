@@ -1,0 +1,146 @@
+@font-face {
+    font-family: genshin-impact;
+    src: url(../font/ja-jp.ttf);
+}
+
+:root {
+    --purple: #5D217A;
+    --purple500: #A855F7;
+    --purple600: #9333EA;
+    --purple700: #7E22CE;
+    --slate800: #1e293b;
+    --white: #fbfbfb;
+    --sadWhite: #fbfbfb8c;
+    --lg: 24px;
+    --md:16px;
+    --sm:12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'genshin-impact', sans-serif;
+    color: var(--white);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-color: var(--purple500);
+    padding: 20px;
+}
+
+/* Menu de personajes */
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__paimon {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px var(--slate800) solid;
+    margin-bottom: 50px;
+}
+
+.paimon_image {
+    width: 100%;
+    height: 100%;
+    background-image: url(../icon/paimon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu__pjs {
+    display: grid;
+    grid-template-rows: repeat(8, 45px);
+    grid-template-columns: 45px;
+    gap: 10px;
+}
+
+.pj_icon {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px var(--slate800) solid;
+}
+
+.pj_icon-side {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Diseño de menu */
+
+/* Diseño de personaje */
+.personaje {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.personaje__card {
+    width: 400%;
+    height: 100%;
+}
+.personaje__card-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Diseño de los atributos del personaje */
+.atributos {
+    width: 400%;
+    height: auto;
+    position: absolute;
+    background-color: var(--purple700);
+    border-radius: 12px;
+    bottom: 100px;
+    padding: 10px;
+}
+.atributos__titulo {
+    font-size: var(--lg);
+}
+
+/* diseño de los stats */
+.atributos__stats {
+    display: grid;
+    grid-template-columns: 20px auto auto;
+    gap: 5px;
+    margin: 20px 0 20px 0;
+}
+.atributos__lista {
+    display: flex;
+    flex-direction: column;
+}
+.atributos__iconos {
+    width: 27px;
+}
+.atributos__info, .atributos__valor{
+    font-size: var(--md);
+    text-align: none;
+    list-style: none;
+}
+.atributos__resumen {
+    font-size: var(--md);
+    color: var(--sadWhite)
+}
+/* .cube {
+    background-color:cadetblue;
+}
+
+.large {
+    grid-column-start: 2;
+    grid-column-end: 6;
+} */
