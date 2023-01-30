@@ -53,8 +53,8 @@ const viewDataPJ = async (urlApi) => {
         vision = vision.toLowerCase()
 
         // Color acorde a la vision
-        colorBgR.style.backgroundColor = `var(--${vision}500)`;
-        colorBg.style.backgroundColor = `var(--${vision}500)`;
+        colorBgR.style.background = `linear-gradient(180deg, var(--${vision}500) 0%, rgba(0, 0, 0) 100%)`;
+        colorBg.style.background = `linear-gradient(180deg, var(--${vision}500) 0%, rgba(192, 41, 41, 0) 100%)`;
 
 
         // Imagen del elemento

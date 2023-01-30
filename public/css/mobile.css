@@ -39,7 +39,7 @@ html {
 }
 
 .responsive {
-    background-color: var(--electro500);
+    background: linear-gradient(180deg, var(--electro500) 0%, rgba(192, 41, 41, 0) 100%);
 }
 
 .container {
@@ -48,7 +48,7 @@ html {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    background-color: var(--electro500);
+    background: linear-gradient(180deg, var(--electro500) 0%, rgba(192, 41, 41, 0) 100%);
     padding: 20px;
 }
 
