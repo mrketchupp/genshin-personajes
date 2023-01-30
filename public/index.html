@@ -10,89 +10,29 @@
     <!-- <link rel="stylesheet" href="./css/style.css" media="screen and (min-width: 800px)"> -->
 </head>
 <body>
-    <div class="container">
-        <!-- Pruebas de diseño -->
-        <!-- <div class="cube small">1</div>
-        <div class="cube large">2</div>
-        <div class="cube none">3</div> -->
-
-        <nav class="menu">
-            <div class="menu__paimon">
-                <div class="paimon_image"></div>
-            </div>
-            <ul class="menu__pjs">
-                <figure class="pj_icon">
-                    <img src="./img/beidou_side.png" alt="Beidou" class="pj_icon-side team select">
-                </figure>
-                <figure class="pj_icon">
-                    <img src="./img/hutao_side.png" alt="Hu Tao" class="pj_icon-side team">
-                </figure>
-                <figure class="pj_icon">
-                    <img src="./img/ayaka_side.png" alt="Ayaka" class="pj_icon-side team">
-                </figure>
-                <figure class="pj_icon">
-                    <img src="./img/mona_side.png" alt="Mona" class="pj_icon-side team">
-                </figure>
-                <figure class="pj_icon">
-                    <img src="./img/noelle_side.png" alt="Noelle" class="pj_icon-side">
-                </figure>
-                <figure class="pj_icon">
-                    <img src="./img/sucrose_side.png" alt="Sacarosa" class="pj_icon-side">
-                </figure>
-                <figure class="pj_icon">
-                    <img src="./img/barbara_side.png" alt="Barbara" class="pj_icon-side">
-                </figure>
-                <figure class="pj_icon">
-                    <img src="./img/lisa_side.png" alt="Lisa" class="pj_icon-side">
-                </figure>
-            </ul>
-        </nav>
-        <!-- <div class="personaje__menu">
-            <ul class="personaje__lista">
-                <ul class="personaje__opciones">Atributos</ul>
-                <ul class="personaje__opciones">Arma</ul>
-                <ul class="personaje__opciones">Artefactos</ul>
-                <ul class="personaje__opciones">Constelacion</ul>
-                <ul class="personaje__opciones">Talentos</ul>
-                <ul class="personaje__opciones">Info</ul>
-            </ul>
-        </div> -->
-        <main class="personaje">
-            <figure class="personaje__card">
-                <img src="./img/beidou-body2.png" alt="Beidou Body" class="personaje__card-img">
-            </figure>
-            <div class="atributos">
-                <h4 class="atributos__titulo">Beidou</h4>
-                <h4 class="atributos__titulo">⭐⭐⭐⭐⭐⭐</h4>
-                <h4 class="atributos__titulo">Nivel 90<span class="titulo__sub-contenido">/90</span></h4>
-                <div class="atributos__stats">
-                    <div class="atributos__lista">
-                        <img src="./svg/IconAttributeHealth.svg" alt="Health" class="atributos__iconos">
-                        <img src="./svg/IconAttributeAttack.svg" alt="Attack" class="atributos__iconos">
-                        <img src="./svg/IconAttributeDefense.svg" alt="Defense" class="atributos__iconos">
-                        <img src="./svg/IconAttributeElementalMastery.svg" alt="Elemental Mastery" class="atributos__iconos">
-                        <img src="./svg/IconAttributeStamina.svg" alt="Stamina" class="atributos__iconos">
-                    </div>
-                    <ul class="atributos__lista">
-                        <li class="atributos__info">Max HP</li>
-                        <li class="atributos__info">ATK</li>
-                        <li class="atributos__info">DEF</li>
-                        <li class="atributos__info">Maestria Elemental</li>
-                        <li class="atributos__info">Max Estamina</li>
-                    </ul>
-                    <ul class="atributos__lista">
-                        <li class="atributos__valor">20,869</li>
-                        <li class="atributos__valor">2,306</li>
-                        <li class="atributos__valor">746</li>
-                        <li class="atributos__valor">56</li>
-                        <li class="atributos__valor">224</li>
-                    </ul>
+    <div class="responsive">
+        <div class="container">
+            <nav class="menu">
+                <div class="menu__paimon" id="elemento">
                 </div>
-                <p class="atributos__resumen">
-                    Lider de la Flota Cruz Meridianam. Es una jefa bastante desenfadada y franca.
-                </p>
-            </div>
-        </main>
+                <ul class="menu__pjs" id="list-icons">
+                </ul>
+            </nav>
+            <!-- <div class="personaje__menu">
+                <ul class="personaje__lista">
+                    <ul class="personaje__opciones">Atributos</ul>
+                    <ul class="personaje__opciones">Arma</ul>
+                    <ul class="personaje__opciones">Artefactos</ul>
+                    <ul class="personaje__opciones">Constelacion</ul>
+                    <ul class="personaje__opciones">Talentos</ul>
+                    <ul class="personaje__opciones">Info</ul>
+                </ul>
+            </div> -->
+            <main class="personaje" id="card-pj">
+            </main>
+        </div>
     </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
