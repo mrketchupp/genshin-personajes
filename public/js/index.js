@@ -31,8 +31,13 @@ function getRandomInt(max) {
 const viewDataPJ = async (urlApi) => {
     try {
         const characters = await fetchData(`${urlApi}/characters`);
-        pjQuery = characters[getRandomInt(34)];
-        const personaje = await fetchData(`${urlApi}/characters/${pjQuery}`);
+
+        // Generamos lista de personajes
+        let listCharacters = [];
+        listCharacters = Array.from({length: 7}, () => characters[getRandomInt(34)]);
+        console.log(listCharacters);
+
+        const personaje = await fetchData(`${urlApi}/characters/${listCharacters[0]}`);
         console.log(`
             Nombre: ${personaje.name}
             Titulo: ${personaje.title}
@@ -65,7 +70,7 @@ const viewDataPJ = async (urlApi) => {
         // Iconos de personajes
         listIcons.innerHTML = `
         <figure class="pj_icon pj-main-border">
-            <img src="${urlApi}/characters/${pjQuery}/icon-side" alt="${personaje.name}" class="pj_icon-side pj-main">
+            <img src="${urlApi}/characters/${listCharacters[0]}/icon-side" alt="${personaje.name}" class="pj_icon-side pj-main">
         </figure>
         <figure class="pj_icon team-border">
             <img src="${urlApi}/characters/${characters[getRandomInt(34)]}/icon-side" alt=" " class="pj_icon-side team">
@@ -95,7 +100,7 @@ const viewDataPJ = async (urlApi) => {
         // Tarjeta de personaje
         cardPj.innerHTML = `
         <figure class="personaje__card">
-                <img src="${urlApi}/characters/${pjQuery}/portrait" alt="${personaje.name} Body" class="personaje__card-img">
+                <img src="${urlApi}/characters/${listCharacters[0]}/portrait" alt="${personaje.name} Body" class="personaje__card-img">
             </figure>
             <div class="atributos">
                 <h4 class="atributos__titulo">${personaje.name}</h4>
